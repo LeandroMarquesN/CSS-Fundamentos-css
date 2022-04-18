@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 
+    comentarios sobre os filtros
+
+
+- drop-shadow() 
+
+como devemos aplicar nossa propriedade filtro:
+
+filter:<nome-do-filtro>(<valor>)[<nome-do filtro>(<valor>)]*|none; 
+
+
+ -->
+ <style>
+      img {
+        filter: drop-shadow(20px 20px 20px rgba(0,0,0,.9));
+        transform: scale(.9);
+        transition: .5s ease-out;
+        border-radius: 8%;
+    }
+
+
+    img:hover{
+        filter: drop-shadow(1);
+        transform: scale(1);
+
+    }
+ </style>
+
+</head>
+<body>
+    <header>
+        <img src="./tatoo.jpg" alt="">
+    </header>
+</body>
+</html>

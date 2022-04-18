@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O seletor no css</title>
+
+<!--O seletor universal (*) seleciona todos os elementos HTML na página.-->
+    <style>
+       *{
+           text-align: justify;
+           color: maroon;
+       } 
+    </style>
+
+
+
+
+    <!--O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico.
+
+O id de um elemento é único dentro de uma página, então o seletor de id é usado para selecionar um elemento único!
+
+Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido do id do elemento. -->
+    <style>
+        p#para_1 {
+                    text-align: center;
+                    color: midnightblue;
+                    font-size: large;
+                    font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <!--O seletor de classe seleciona elementos HTML com um atributo de classe específico.
+
+Para selecionar elementos com uma classe específica, escreva um caractere ponto (.), seguido do nome da classe.-->
+<style>
+        p.para_2 {
+            text-decoration: lightcoral;
+            text-align: right;
+            font-size: 20pt;
+            color: lightseagreen;
+        }
+</style>
+<!--podemos ter 2 class dentro de um elemnto-->
+<style>
+
+    p.para_3 {
+        color: magenta;
+        text-align: right;
+    }
+
+    p.para_4 {
+        font-size: 50px;
+    }
+</style>
+
+</head>
+<body>
+    <h1>heading</h1>
+    <p>this is pargraph</p>
+    <p id ="para_1">this paragraph will be  afetado for id p#para_1</p>
+    
+    <p class="para_2">this is pargraph with  class para_2</p>
+    <p class="para_2">this is pargraph</p>
+    <p>this is pargraph</p>
+
+    <!--podemos ter 2 class dentro de um elemnto-->
+
+        <p class="para_3 para_4">this is pargraph</p>
+        <h2>this is pargraph</h2>
+        <p class="para_4">this is pargraph</p>
+        <p>this is pargraph</p>
+        <h1>O seletor universal (*) seleciona todos os elementos HTML na página.</h1>
+
+
+</body>
+</html>

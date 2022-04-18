@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 
+    comentarios sobre os filtros
+
+- opacity() com este efeito trabalhamos a visibilidade da foto sendo que 1 fica sem efeito  e 0 fica invisivel e podemos trabalhara com valores intermediarios. como .1 .2 .3 .4 .5 .6 etc...
+- brightness()
+- constrast()
+- drop-shadow()
+
+como devemos aplicar nossa propriedade filtro:
+
+filter:<nome-do-filtro>(<valor>)[<nome-do filtro>(<valor>)]*|none; 
+
+
+ -->
+ <style>
+      img {
+          filter:opacity(.5) ;
+          transition: transform 1s ease-in-out;
+        }
+        
+        
+        img:hover{
+            filter:opacity(1);
+            transition:1s ease-out;
+            transform: scale(.9);
+            
+
+    }
+ </style>
+
+</head>
+<body>
+    <header>
+        <img src="./tatoo.jpg" alt="">
+    </header>
+</body>
+</html>

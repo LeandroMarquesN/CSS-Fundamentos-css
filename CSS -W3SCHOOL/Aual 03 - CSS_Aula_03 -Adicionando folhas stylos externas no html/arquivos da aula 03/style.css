@@ -1,0 +1,28 @@
+
+/*Criei este arquivo pra exemplificar com vai faço para ligar os arquivos html com arquivos css
+
+está pagina contem apenas comandos de css!!
+1ª o aruivo css tem que ser criado com a extensao css
+
+2ª no aruivo html vai a tag link :
+<link rel="stylesheet" href="style.css">
+
+3ª Os dois arquivos o html e o css tem que estár na mesma pasta!!
+
+*/
+
+
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 80px;
+  }
+  p {
+      text-align: center;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 20px;
+      color: rgb(90, 30, 105);
+  }

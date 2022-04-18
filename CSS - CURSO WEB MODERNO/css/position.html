@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        * {
+            background:black ;
+            color: white;
+        }
+        div {
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px rgb(92, 5, 5);
+            border-radius: 20px;
+        }
+        .static {
+            background: linear-gradient(to right ,orange,red);
+        }
+        .fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            background: linear-gradient(to right ,orange,red);
+        }
+
+        .relative1 {
+            position : relative;
+            left : 50px;
+            top:5px;
+        }
+        .absolute1 {
+            position: absolute;
+            top: 350px;
+            left: 400px;
+            background: linear-gradient(to right, orange, red);
+        }
+
+        .absolute1:hover {
+            left: 390px;
+            border: solid 5px white;
+            box-shadow:2px 2px 60px 10px white ;
+            
+            transition: left 1s;
+        }
+
+        .relative2 {
+            position: relative;
+            
+            font-size: 40px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
+            
+            left: 250px;
+            top: 180px;
+            width: 400px;
+            height: 1000px;
+            background: linear-gradient(to right,orange,red);
+            
+            transition: left 1s;
+        }
+        .relative2:hover {
+            left: 240px;
+            border: solid 5px white;
+            box-shadow:2px 2px 60px 10px red ;
+        }
+        .absolute2 {
+            position: absolute;
+            left: 100px;
+            height: 80px;
+            width: auto;
+
+            transition: left 1.8s;  
+        }
+        .absolute2:hover {
+            box-shadow:2px 2px 60px 10px white ;
+            color: red;
+            text-shadow: 2px 2px 15px white;
+            left: 20%;
+            border: solid 5px white;
+            
+        }
+        .sticky {
+            position: -webkit-sticky; 
+            position: sticky;
+            background: linear-gradient(to right, black , red);
+            color: red;
+
+            width: auto;
+            left: 30px;
+            
+            top: 30px;
+            bottom: 30px;
+            transition: box-shadow 2s;
+            transition: color 3s;
+        }
+        .sticky:hover {
+            background: linear-gradient(to left,black ,red);
+            box-shadow:2px 2px 20px 6px white ;
+            color:  white;
+            text-shadow: 2px 2px 6px 20px red;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">POsition:Fixed...Fica sempre aparecendo!!</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">Realtive 2
+        <div class="absolute2">absolute 2</div>
+    </div>
+
+    <div class="sticky">position :Sticky...Muito bom para criar menus que fiquem aparecendo sempre</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+    <!-- foi colocado nete paragrafo um style em que temos um paddin-bottom: 2000px ! pois isto faz com que temos um barra do tipo  scrow com que faz com que tenhamos mais espaço para baixo para demosntrar as propriedades do position.-->
+</body>
+
+</html>

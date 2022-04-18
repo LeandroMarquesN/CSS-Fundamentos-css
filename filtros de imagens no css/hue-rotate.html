@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 
+    comentarios sobre os filtros
+
+- hue-rotate() neste efeito trabalhamos com valores em graus paara isso temos que a roda de cores que nada mais eé que o ciclo das cores mas coloccamos em graus como 360º ou angulo
+
+podemos colocara valores negativos como -90deg e fica a cor oposta
+
+- invert()
+- opacity()
+- brightness()
+- constrast()
+- drop-shadow()
+
+como devemos aplicar nossa propriedade filtro:
+
+filter:<nome-do-filtro>(<valor>)[<nome-do filtro>(<valor>)]*|none; 
+
+
+ -->
+ <style>
+      img {
+        transition: filter 1s;
+    }
+
+
+    img:hover{
+        filter: hue-rotate(90deg);
+
+    }
+ </style>
+
+</head>
+<body>
+    <header>
+        <img src="./tatoo.jpg" alt="">
+    </header>
+</body>
+</html>

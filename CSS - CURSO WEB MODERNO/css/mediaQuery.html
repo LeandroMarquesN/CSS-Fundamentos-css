@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <style>
+        * {
+            background-color: black;
+        }
+        div {
+            font-size: 40px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            background:linear-gradient(to right,orange,purple);
+            color: white;
+            border-radius: 20px;
+            border: solid 10px purple;
+            display:none;
+        }
+
+        @media(max-width: 600px),(orientation: portrait) {
+	        .muito-pequeno{ display:block; }
+        }
+        @media(max-width:1000px),(orientation:portrait){
+            .pequeno-retrato { display: block; }
+        }
+        @media (min-width:500px) and (max-width:1000px){
+            .intervalo{display:block}
+        }
+    </style>
+</head>
+<body>
+    <div class="muito-pequeno">Muito Pequeno</div>
+    <div class="pequeno-retrato">Pequeno ou Retrato</div>
+    <div class="intervalo">Intervalo</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- video aula de filtro
+        https://www.youtube.com/watch?v=IGnGeNZc3WA&t=71s&ab_channel=dpw 
+    -->
+    <style>
+        body{
+            margin: 0px 0px;
+        }
+    header{
+       display: flex;
+       
+    }
+/* comentarios:
+
+filtros de css
+- grayscale() 
+podemos colocar valores para fazer a aplicação como: 0 sem aplicação e 1 valor maximo. 
+podemos trabalhara com valores intermediaraios.
+ou .1 ou .2 ou .3 etc 
+
+
+
+- sepia()
+- saturate()
+- hue-rotate()
+- invert()
+- opacity()
+- brightness()
+- constrast()
+- drop-shadow()
+
+/* filter:<nome-do-filtro>(<valor>)[<nome-do filtro>(<valor>)]*|none; 
+
+
+
+ */
+    img {
+        transition: filter 1s ease-in-out;
+    }
+
+
+    img:hover{
+        filter: grayscale(1);
+
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <img src="./tatoo.jpg" alt="">
+        </header>
+    </div>
+</body>
+</html>
