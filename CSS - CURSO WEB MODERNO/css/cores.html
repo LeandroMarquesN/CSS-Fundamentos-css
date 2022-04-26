@@ -11,11 +11,72 @@
             https://coolors.co/
             http://paletton.com/
         */
+        /* No seletor abaixo temos um (*)mostra que quero selecionar todos os elementos! è uma forma de zerar as configurações.
+        neste caso queremos que a cor a fonte seja black em todos os elementos menos no que for configurado com a suas preferencias. */
+        * {
+            color:rgb(0, 0, 0)
+        }
+        body {
+            background-color:skyblue ;
+        }
+        
+        .red {
+            background-color: #ff0000;
+        }
+        .green {
+            background-color: #00ff00;
+        }
+        .blue {
+            background-color: #0000ff;
+        }
+        .transparencia {
+            color:white;
+            background-color: #edc91200;
+            /* retire os dois ultimos zeros ou coloque ff e verá que a cor vai ficar totalmete amarela fincando sem tranparencia. no momento o amarelo está totalmente transparente e como a class transparencia está herdando a cor azul da div antenrior ela está tranparecendo a cor azul  */
+        }
+        .rgba {
+            background-color:rgba(255,0,255,0.5);
+            /*Está cor esta sendo composta por 255 de vermelho red 0 de verde green 255 de azul blue .
+
+            coloque o valor 0 no que corresponde o Alpha e verás que a cor ficará totalmente transparente.
+            
+            O alpha o (A)  trabalha com a escala de 0 a 0.5 ou .5 siguinifica que temos 50% de tranparencia.. 
+
+            e provavelmente ficará azul pois a div está herdando a cor da div anterior   */
+        }
+        .hsl {
+            background-color: hsl(299,58%,50%);
+        }
     </style>
 </head>
 
 <body>
+<div class="red">
+    ola vermelho!
+    <div class="green">
+        olá verde
+        <div class="blue">
+            olá Azul
+            <div class="transparencia">
+                ola transparencia
+                <div class="rgba">
 
+                A função RGBA tem o formato geral rgb(R, G, B, A) . Ela admite quatro parâmetros, que definem a proporção das cores RED, GREEN e BLUE que entram na composição da cor e o quarto parâmetro A (canal alpha da cor) que definine a opacidade. o valor maximo de cada decimal que corresponde sua cor é 255 e o valor minimo é 0
+                    <div class="hsl">
+                        hue saturation e lightness
+                        HUE : Neste caso a escala vai de 0 a 360 que se baseia na cor que é o hue
+                        Saturação: vai de 0 a 100% 
+                        100% corresponde a cor mais forte
+                        0% corresponde a mais fraca  na escala de cinza.
+                        Lightness : 50% seria a cor mais pura possível 
+                        e se for para o lado do 100% vai ficando mais claro
+                        e se for para o lado do 0% vai ficando o mais escuro possível.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
